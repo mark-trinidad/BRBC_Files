@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/BRBC_Files/static/css/main.dc4d6ff2.css",
-    "main.js": "/BRBC_Files/static/js/main.fbf9a342.js",
+    "main.js": "/BRBC_Files/static/js/main.fe5e7942.js",
     "static/media/logo.svg": "/BRBC_Files/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/BRBC_Files/index.html",
     "main.dc4d6ff2.css.map": "/BRBC_Files/static/css/main.dc4d6ff2.css.map",
-    "main.fbf9a342.js.map": "/BRBC_Files/static/js/main.fbf9a342.js.map"
+    "main.fe5e7942.js.map": "/BRBC_Files/static/js/main.fe5e7942.js.map"
   },
   "entrypoints": [
     "static/css/main.dc4d6ff2.css",
-    "static/js/main.fbf9a342.js"
+    "static/js/main.fe5e7942.js"
   ]
 }
