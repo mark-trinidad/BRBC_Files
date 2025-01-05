@@ -10,29 +10,29 @@ function App() {
         <ul>
           <li>
             <a
-              href="/files/Church-Membeship.pdf"
+              href="/files/Church-Membership.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Download Church-Membership.pdf (PDF)
+              Download Church-Membership (PDF)
             </a>
           </li>
           <li>
             <a
-              href="/files/worship-schedule.docx"
+              href="/files/BRBC-Thursday-Study.docx"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Download Worship Schedule (Word)
+              Download BRBC-Thursday-Study (Word)
             </a>
           </li>
           <li>
             <a
-              href="/files/announcements.pptx"
+              href="/files/Doctrine-of-Grace-1.pptx"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Download Announcements (PPTX)
+              Download Doctrine-of-Grace-1 (PPTX)
             </a>
           </li>
         </ul>
