@@ -10,7 +10,7 @@ function App() {
         <ul>
           <li>
             <a
-              href="/files/Church-Membership.pdf"
+              href={`${process.env.PUBLIC_URL}/files/Church-Membership.pdf`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -19,7 +19,7 @@ function App() {
           </li>
           <li>
             <a
-              href="/files/BRBC-Thursday-Study.docx"
+              href={`${process.env.PUBLIC_URL}/files/BRBC-Thursday-Study.docx`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -28,7 +28,7 @@ function App() {
           </li>
           <li>
             <a
-              href="/files/Doctrine-of-Grace-1.pptx"
+              href={`${process.env.PUBLIC_URL}/files/Doctrine-of-Grace-1.pptx`}
               target="_blank"
               rel="noopener noreferrer"
             >
