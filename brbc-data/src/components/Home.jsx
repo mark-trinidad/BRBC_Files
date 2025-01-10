@@ -6,7 +6,8 @@ export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    fetch('https://raw.githubusercontent.com/mark-trinidad/BRBC_Files/refs/heads/main/brbc-data/public/fileList.json')
+    // Update the path to where the file list is stored in your public directory.
+    fetch('/brbc-data/fileList.json')  // Corrected path for GitHub Pages.
       .then(response => response.json())
       .then(data => {
         setFileList(data);
@@ -43,7 +44,8 @@ export default function Home() {
           <ul>
             {filteredFiles.map((file, index) => (
               <li key={index}>
-                <a href={file} download>{file.split('/').pop()}</a>
+                {/* Corrected link to download file from GitHub Pages */}
+                <a href={`/${file}`} download>{file.split('/').pop()}</a>
               </li>
             ))}
           </ul>
