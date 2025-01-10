@@ -6,7 +6,7 @@ export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    // Update the path to where the file list is stored in your public directory.
+    // Fetch the file list from the correct path on GitHub Pages.
     fetch('/brbc-data/fileList.json')  // Corrected path for GitHub Pages.
       .then(response => response.json())
       .then(data => {
@@ -45,7 +45,7 @@ export default function Home() {
             {filteredFiles.map((file, index) => (
               <li key={index}>
                 {/* Corrected link to download file from GitHub Pages */}
-                <a href={`/${file}`} download>{file.split('/').pop()}</a>
+                <a href={`/brbc-data/${file}`} download>{file.split('/').pop()}</a>
               </li>
             ))}
           </ul>
