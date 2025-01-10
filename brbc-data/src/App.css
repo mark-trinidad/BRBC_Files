@@ -1,38 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:ital,wght@0,629;1,629&display=swap');
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 25%;
+  font-family: "Raleway", sans-serif;
+  border-bottom: 2px solid black;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home {
+  font-family: "Poppins", sans-serif;
+  padding-top: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.home button {
+  font-family: "Raleway", sans-serif;
+  background-color: #00377f;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home button:hover {
+  background-color: #0764c7;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.home .search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.home .search-bar input {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 2px solid #ddd;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.home .search-bar input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.home .search-bar button {
+  font-family: "Raleway", sans-serif;
+  background-color: #00377f;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.home .search-bar button:hover {
+  background-color: #0764c7;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.file-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.file-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.file-list li {
+  background-color: #fff;
+  padding: 15px;
+  margin: 12px 0;
+  width: 85%;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.file-list li:hover {
+  transform: translateY(-5px);
+  background-color: #f0f8ff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.file-list a {
+  text-decoration: none;
+  color: #007bff;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.file-list a:hover {
+  color: #0056b3;
+}
+
+.file-list p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #555;
 }
