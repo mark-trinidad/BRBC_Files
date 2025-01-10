@@ -7,7 +7,7 @@ export default function Home() {
 
   useEffect(() => {
     // Fetch the file list from the correct path on GitHub Pages.
-    fetch('/brbc-data/fileList.json')  // Corrected path for GitHub Pages.
+    fetch('/BRBC_Files/fileList.json')  // Corrected path for GitHub Pages.
       .then(response => response.json())
       .then(data => {
         setFileList(data);
@@ -45,7 +45,7 @@ export default function Home() {
             {filteredFiles.map((file, index) => (
               <li key={index}>
                 {/* Corrected link to download file from GitHub Pages */}
-                <a href={`/brbc-data/${file}`} download>{file.split('/').pop()}</a>
+                <a href={`/BRBC_Files/${file}`} download>{file.split('/').pop()}</a>
               </li>
             ))}
           </ul>
