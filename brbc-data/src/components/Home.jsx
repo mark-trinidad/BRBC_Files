@@ -7,7 +7,7 @@ export default function Home() {
 
   useEffect(() => {
     // Update the path to where the file list is stored in your public directory.
-    fetch('/brbc-data/public/fileList.json')  // Corrected path for GitHub Pages.
+    fetch('/brbc-data/fileList.json')  // Corrected path for GitHub Pages.
       .then(response => response.json())
       .then(data => {
         setFileList(data);
