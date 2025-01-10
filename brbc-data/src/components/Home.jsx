@@ -6,7 +6,7 @@ export default function Home() {
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
-    fetch('/BRBC_Files/fileList.json')
+    fetch('https://raw.githubusercontent.com/mark-trinidad/BRBC_Files/refs/heads/main/brbc-data/public/fileList.json')
       .then(response => response.json())
       .then(data => {
         setFileList(data);
